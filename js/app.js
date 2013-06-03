@@ -1,11 +1,22 @@
-App = Ember.Application.create();
+App = Ember.Application.create({
+	LOG_TRANSITIONS: true
+});
+
+App.Store = DS.Store.extend({
+  revision: 12,
+  adapter: 'DS.FixtureAdapter'
+});
 
 App.Router.map(function() {
-  // put your routes here
+  this.resource('pomodoro', { path: "pomodoros" });
 });
 
 App.IndexRoute = Ember.Route.extend({
-  model: function() {
-    return ['red', 'yellow', 'blue'];
-  }
+
 });
+
+App.PomodoroRoute = Ember.Route.extend({
+	 model : function() {
+    return App.Pomodoro.find();
+  },
+})
