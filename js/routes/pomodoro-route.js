@@ -1,5 +1,5 @@
 App.PomodoroRoute = Ember.Route.extend({
-	 model : function() {
-    return App.Pomodoro.find();
+	 model : function(params) {
+    return App.Pomodoro.find(params.pomodoro_id);
   },
-})
+});

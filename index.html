@@ -12,7 +12,7 @@
     <h2>Pomodoro</h2>
     <nav>
       <ul>
-        <li>{{#linkTo 'pomodoro'}}Pomodoros{{/linkTo}}</li>
+        <li>{{#linkTo 'pomodoros'}}Pomodoros{{/linkTo}}</li>
         <li>{{#linkTo 'settings'}}Settings{{/linkTo}}</li>
       </ul>
     </nav>
@@ -20,12 +20,17 @@
     {{outlet}}
   </script>
 
-  <script type="text/x-handlebars" data-template-name="pomodoro">
+  <script type="text/x-handlebars" data-template-name="pomodoros">
     <ul>
     {{#each item in controller}}
-      <li>{{item.title}}</li>
+      <li>{{#linkTo 'pomodoro' item}}{{item.title}}{{/linkTo}}</li>
     {{/each}}
     </ul>
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="pomodoro">
+    {{title}}
   </script>
 
   <script type="text/x-handlebars" data-template-name="settings">
@@ -44,6 +49,7 @@
   <script src="js/models/settings.js"></script>
   <script src="js/router.js"></script>
   <script src="js/routes/index-route.js"></script>
+  <script src="js/routes/pomodoros-route.js"></script>
   <script src="js/routes/pomodoro-route.js"></script>
   <script src="js/routes/settings-route.js"></script>
   
