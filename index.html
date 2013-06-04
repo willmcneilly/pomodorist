@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Ember Starter Kit</title>
+<title>Pomodoro</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,6 +10,12 @@
 
   <script type="text/x-handlebars">
     <h2>Pomodoro</h2>
+    <nav>
+      <ul>
+        <li>{{#linkTo 'pomodoro'}}Pomodoros{{/linkTo}}</li>
+        <li>{{#linkTo 'settings'}}Settings{{/linkTo}}</li>
+      </ul>
+    </nav>
 
     {{outlet}}
   </script>
@@ -25,6 +31,8 @@
   <script type="text/x-handlebars" data-template-name="settings">
     <p>Pomodoro Time: {{pomodoroTime}}</p>
     <p>Rest Time: {{restTime}}</p>
+
+    <!-- Use http://keith-wood.name/countdown.html -->
   </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
