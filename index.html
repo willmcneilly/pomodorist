@@ -22,6 +22,7 @@
 
   <script type="text/x-handlebars" data-template-name="pomodoros">
     <ul>
+      <li>{{#linkTo 'pomodoros.new'}}New Pomodoro{{/linkTo}}</li>
     {{#each item in controller}}
       <li>{{#linkTo 'pomodoro' item}}{{item.title}}{{/linkTo}}</li>
     {{/each}}
@@ -31,6 +32,10 @@
 
   <script type="text/x-handlebars" data-template-name="pomodoro">
     {{title}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="pomodoros/new">
+    New pomodoro
   </script>
 
   <script type="text/x-handlebars" data-template-name="settings">
