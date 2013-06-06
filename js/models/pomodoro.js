@@ -18,8 +18,8 @@ App.Pomodoro.FIXTURES = [
 		dateEnded: "2013-06-03T07:25:13+00:00",
 		pomodoroTime: 1500000,
 		restTime: 300000,
-		pomodoroCompleted: false,
-		restCompleted: false,
+		pomodoroCompleted: true,
+		restCompleted: true,
 	},
 	{
 		id: 2,
@@ -29,8 +29,8 @@ App.Pomodoro.FIXTURES = [
 		dateEnded: "2013-07-03T07:25:13+00:00",
 		pomodoroTime: 1500000,
 		restTime: 300000,
-		pomodoroCompleted: false,
-		restCompleted: false,
+		pomodoroCompleted: true,
+		restCompleted: true,
 	},
 	{
 		id: 3,
@@ -40,8 +40,8 @@ App.Pomodoro.FIXTURES = [
 		dateEnded: "2013-08-03T07:25:13+00:00",
 		pomodoroTime: 1500000,
 		restTime: 300000,
-		pomodoroCompleted: false,
-		restCompleted: false,
+		pomodoroCompleted: true,
+		restCompleted: true,
 	},
 	{
 		id: 4,
@@ -51,7 +51,7 @@ App.Pomodoro.FIXTURES = [
 		dateEnded: "2013-09-03T07:25:13+00:00",
 		pomodoroTime: 1500000,
 		restTime: 300000,
-		pomodoroCompleted: false,
-		restCompleted: false,
+		pomodoroCompleted: true,
+		restCompleted: true,
 	},
 ]

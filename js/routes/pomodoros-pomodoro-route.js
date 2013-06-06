@@ -7,8 +7,18 @@ App.PomodorosPomodoroRoute = Ember.Route.extend({
   setupController: function(controller, model) {
   	this._super.apply(this, arguments);
     this.controllerFor('PomodorosPomodoro');
-    //implement your code here
-    console.log('route entered')
+
+    //check if pomodoro is completed
+    
+    //if it isn't start timer
+    if(this.get('controller').get('pomodoroCompleted') === false) {
+    	console.log('start timer');
+    }
+    else {
+    	//if it is do nothing
+    }
+
+    
   }
 
 });
